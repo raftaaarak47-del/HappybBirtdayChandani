@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#1a0927">
+<title>Happy Birthday Chandani 🎂💖</title>
+<style>
+:root{--pink:#ff83b8;--rose:#ed397e;--gold:#ffe1a1;--white:#fff5fa}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% 0,#64245d,#1a0927 67%);color:var(--white);font-family:Georgia,'Times New Roman',serif;overflow-x:hidden}
+#stars,#fx,#confetti{position:fixed;inset:0;pointer-events:none;overflow:hidden}#stars{z-index:0}#fx{z-index:5}#confetti{z-index:8}
+.star{position:absolute;width:2px;height:2px;background:#fff;border-radius:50%;animation:twinkle 2s infinite alternate}@keyframes twinkle{to{opacity:.1;transform:scale(.5)}}
+.heart{position:absolute;bottom:-45px;animation:floatUp linear forwards;color:#ff8fbd;text-shadow:0 0 15px #ff477e88}
+@keyframes floatUp{to{transform:translateY(-115vh) rotate(30deg);opacity:0}}
+.conf{position:absolute;top:-30px;width:9px;height:15px;animation:fall linear forwards;border-radius:2px}
+@keyframes fall{to{transform:translateY(115vh) rotate(850deg)}}
+main{position:relative;z-index:1;min-height:100svh;display:grid;place-items:center;padding:18px 12px}
+.card{width:min(760px,100%);padding:clamp(20px,5vw,44px);border:1px solid #ffffff26;border-radius:28px;background:linear-gradient(145deg,#ffffff16,#ffffff08);box-shadow:0 25px 80px #0005;backdrop-filter:blur(9px);text-align:center;overflow:hidden}
+.kicker{font:700 11px/1.7 system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#ffb5d2}
+h1{font-size:clamp(2.6rem,10vw,5.5rem);line-height:.97;font-weight:500;color:#ffd5e7;text-shadow:0 0 28px #ff4c9a55;margin:18px 0}
+h2{font-size:clamp(1.9rem,7vw,3.25rem);line-height:1.1;font-weight:500;color:#ffd5e7;margin:14px 0 20px}
+p{font-size:clamp(1.02rem,3.4vw,1.2rem);line-height:1.8;color:#f9e9f4}.script{font-style:italic;color:#ffb5d2}.muted{font:12px/1.6 system-ui,sans-serif;color:#d4b6d3}
+.hidden{display:none!important}.emoji{font-size:clamp(3.4rem,13vw,6rem);margin:15px 0;filter:drop-shadow(0 0 20px #ff70ae55)}
+.nav{display:flex;justify-content:space-between;gap:12px;margin-top:27px}.btn{font:inherit;border-radius:999px;padding:13px 22px;min-width:112px;color:#fff;background:#ffffff13;border:1px solid #ffffff38;cursor:pointer}.btn.next{background:linear-gradient(120deg,#ff82b7,#e93e83);border:0;box-shadow:0 8px 25px #e93e8344}.btn.gold{background:linear-gradient(120deg,#ffe1a2,#ff9ec9);color:#451332;border:0}.btn:disabled{opacity:.25;cursor:not-allowed}
+.actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:20px 0}
+.answerlist{display:grid;gap:10px;max-width:470px;margin:20px auto}.answer{background:#ffffff10;border:1px solid #ffb5d266;color:#fff2f8;text-align:left;padding:13px 15px;border-radius:15px;cursor:pointer}.answer.selected{background:#ff78b72d;border-color:#ff83b8}.reply{min-height:30px;color:#ffd7e8;font-style:italic}
+.cakearea{width:230px;height:210px;margin:8px auto 15px;position:relative}.cakebase{position:absolute;bottom:20px;left:30px;width:170px;height:95px;border-radius:12px 12px 20px 20px;background:linear-gradient(#ffb7d1 0 25%,#fff2f7 25% 42%,#e95891 42%);box-shadow:inset 0 -9px #bd3d75,0 15px 30px #0003;transition:transform .8s,opacity .8s}.cakebase:before{content:"";position:absolute;top:-11px;left:-7px;width:184px;height:30px;border-radius:50%;background:#fff1f6;border:4px solid #ff9fc1}.cakebase:after{content:"🍓　🍓　🍓";position:absolute;top:6px;left:13px;font-size:18px;white-space:nowrap}
+.candle{position:absolute;z-index:3;left:110px;top:35px;width:11px;height:56px;border-radius:4px;background:repeating-linear-gradient(135deg,#fff 0 6px,#ff72a7 6px 12px)}.flame{position:absolute;z-index:4;left:108px;top:8px;width:16px;height:25px;background:radial-gradient(ellipse at 50% 70%,#fff7a4 0 20%,#ffae38 50%,#ff6b4b 75%);border-radius:60% 40% 60% 40%;filter:drop-shadow(0 0 12px #ffbd57);animation:flicker .6s infinite alternate}
+@keyframes flicker{to{transform:rotate(-6deg) scale(.88)}}
+.cakearea.cut .cakebase{transform:translateX(25px) rotate(8deg);opacity:.25}.cakearea.cut .slice{opacity:1;transform:translate(52px,-12px) rotate(12deg)}.slice{position:absolute;z-index:4;bottom:38px;left:70px;width:75px;height:55px;background:linear-gradient(#fff1f6 0 30%,#ff8db6 30% 55%,#e95891 55%);clip-path:polygon(0 0,100% 0,65% 100%,0 75%);opacity:0;transform:translate(0,0);transition:.8s}
+.bursttitle{animation:pop .8s both}@keyframes pop{0%{transform:scale(.3);opacity:0}70%{transform:scale(1.1)}100%{transform:scale(1);opacity:1}}
+.letter{background:#fff4f8;color:#54243f;text-align:left;padding:23px;border-radius:17px}.letter p{color:#63304b;font-size:1.03rem}.letter strong{color:#c52d70}
+.meter{height:5px;background:#ffffff22;border-radius:99px;overflow:hidden;margin:20px auto;max-width:300px}.meter span{display:block;height:100%;width:0;background:linear-gradient(90deg,#ff82b7,#ffe1a1);transition:width .3s}
+footer{position:relative;z-index:1;text-align:center;padding:20px;color:#bfa5ca;font:12px system-ui,sans-serif}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style></head>
+<body><div id="stars"></div><div id="fx"></div><div id="confetti"></div>
+<main><section class="card">
+<div class="kicker">A birthday surprise made with love</div>
+<div id="content"></div>
+<div class="nav"><button class="btn" id="back" onclick="move(-1)">← Back</button><button class="btn next" id="next" onclick="move(1)">Next →</button></div>
+<div class="meter"><span id="bar"></span></div>
+</section></main><footer>For Chandani ♡ With love from Manauwar Alam</footer>
+<script>
+const $=id=>document.getElementById(id);
+const pages=[
+{emoji:'🎆🎂🎉',title:'Happy Birthday, Chandani!',text:'Aaj ka din sirf tumhare naam! 💖 Meri taraf se tumhare liye dher saara pyaar, khushiyan aur ek chhota sa digital celebration. Sound on karo aur surprise enjoy karo!',sub:'Ready? Let the celebration begin! 🎊',party:true, music:true},
+{emoji:'🕯️',title:'Make a wish, birthday girl',text:'Cake par candle jal rahi hai… ✨ Ek wish maango, aankhein band karo, aur dil se socho ki is saal tum kya chahti ho.',sub:'Jab ready ho, candle bujha do!',candle:true},
+{emoji:'🎂',title:'Ab cake kaatne ka time!',text:'Birthday girl, cake kaatne ke liye button dabao. 🎂 Phir se celebration hoga — hearts, confetti aur birthday wali masti!',cut:true},
+{emoji:'🎉🎊💖',title:'HAPPY BIRTHDAY, CHANDANI!',text:'Yayyyyy! 🎉🎉 Cake cut ho gaya! Tumhari life hamesha aise hi khushiyon, pyaar aur surprise se bhari rahe. Aaj sirf smile karna hai!',sub:'Sending you a sky full of hearts!',party:true, music:true},
+{emoji:'💌',title:'Ek baat dil se…',text:'Chandani, tum meri zindagi ka sabse khoobsurat hissa ho. Tumhari khushi mere liye bahut important hai. Main chahta hoon tum hamesha muskurati raho aur tumhare saare sapne poore hon.',sub:'Hamesha khush rehna, meri jaan. ❤️'},
+{emoji:'🌹',title:'Tumhare liye romantic message',text:'Kabhi-kabhi ek insaan ki presence hi din ko khoobsurat bana deti hai. Tum mere liye woh special insaan ho. Tumhari ek smile, ek pyari si baat, aur tumhara saath — ye sab mere liye precious hai.',sub:'You make ordinary moments feel special. 💗'},
+{emoji:'🫶',title:'Agar main paas hota…',text:'Toh sabse pehle tumhe birthday hug deta, phir cake khilate hue tumhare face par cream lagane ki koshish karta… aur phir tumhari daant bhi pyaar se sunta. 😂❤️',sub:'Virtual hug loading… 🤗'},
+{emoji:'💖',title:'Ek chhota sa sawaal',question:'Chandani, tumhe sabse zyada kya pasand hai?',answers:['🥰 Mera pyaar aur care','🎁 Surprise gifts','🕰️ Saath mein quality time'],replies:['Tumhe pyaar aur care milti rahe, hamesha. ❤️','Noted, birthday queen! 🎁😉','Time spent together becomes the sweetest memory. 💗']},
+{emoji:'😘',title:'Sach-sach batana…',question:'Meri kaunsi baat tumhe sabse zyada cute lagti hai?',answers:['😂 Meri bakwaas aur jokes','🥹 Mera care karna','🙈 Mera romantic hona'],replies:['Meri bakwaas lifetime subscription ke saath aati hai. 😂','Care toh dil se karta hoon, Chandani. ❤️','Achha ji, romance pasand hai! 🙈💖']},
+{emoji:'💑',title:'Future ka ek sweet sawaal',question:'Agar hum date par jaayein, tum kya choose karogi?',answers:['🌌 Stars ke neeche walk','🌹 Candlelight dinner','🍦 Ice cream aur long talks'],replies:['Stars, tum aur endless conversations. 🌌','Romantic choice, madam! 🌹','Simple moments hi toh yaadgaar hote hain. 🍦']},
+{emoji:'🤝❤️',title:'Ek pyaara sa promise',text:'Main promise karta hoon ki tumhari baat sunne ki koshish karunga, tumhari feelings ki respect karunga, aur jab bhi possible ho tumhari smile ki wajah banunga. Galti ho toh ego se pehle baat karna choose karunga.',sub:'Pyaar sirf words nahi, care aur respect bhi hai. ❤️'},
+{emoji:'💍',title:'Shaadi wala promise 😍',text:'Agar zindagi humein shaadi tak saath le jaati hai, toh mera promise hai: tumhara partner hi nahi, tumhara dost bhi banunga. Khushi mein saath hansenge, mushkil mein baat karke raasta nikaalenge, aur ek doosre ki izzat karenge.',sub:'Aur haan… shopping ke time “kitna kharcha hai?” nahi bolunga. 😂❤️'},
+{emoji:'👶🍼',title:'Bachchon wala promise 😂',text:'Future mein agar hamare bachche hue, toh diaper change karne se bhaagunga nahi… kam se kam pehle 2 minute toh duty karunga! 😂🍼 Raat ko baby roya toh pehle Google nahi, pehle baby ko sambhalne ki koshish karunga.',sub:'Disclaimer: ye promise future ke Alam ki taraf se hai. 😂💗'},
+{emoji:'🚘🖤',title:'Dahej nahi… ek funny demand 😂',text:'Meri taraf se dahej ka promise: bilkul nahi! ❤️ Bas mazaak mein ek demand hai — ek BLACK SCORPIO, woh bhi tumhare saath long drive ke liye. 😂🚘',sub:'Real promise: shaadi pyaar aur respect se, dahej se nahi. Black Scorpio sirf joke hai! 🖤'},
+{emoji:'🏡💞',title:'Hamari future wali life',text:'Mera dream hai ek aisi life jahan hum ek doosre ke saath khul kar hans sakein, problems ko team bankar solve karein, aur chhoti-chhoti cheezon mein khushi dhoondhein.',sub:'Perfect life nahi, ek doosre ka saath chahiye. ❤️'},
+{emoji:'🌷',title:'Tumhare liye meri dua',text:'Tumhe good health mile, tumhare dreams poore hon, tumhe success mile, aur tumhari life mein aise log hon jo tumhari kadar karein. Jab bhi thak jao, khud par gentle rehna.',sub:'You deserve peace, happiness and so much love.'},
+{emoji:'💝',title:'Ek secret message',text:'Agar tum kabhi bhool jao ki tum kitni special ho, toh is page ko yaad karna. Kisi ne tumhare liye waqt nikala, tumhare liye wishes likhi, aur tumhari smile imagine karke ye surprise banaya.',sub:'That someone is Manauwar Alam. ❤️'},
+{emoji:'💌',title:'Dil se likha hua letter',letter:true},
+{emoji:'🌠',title:'Ab tumhari wish ki baari',text:'Birthday girl, apne liye ek wish aur maango. Is baar sirf apni khushi, apni growth aur apne future ke liye. Tumhari journey beautiful ho aur har saal tum khud par aur proud feel karo.',sub:'May the universe be kind to you. ✨',party:true},
+{emoji:'🎆💖🎂',title:'Happy Birthday, meri Chandani!',text:'Tumhari zindagi khushiyon se roshan rahe, tum hamesha muskurati raho, aur tumhare saare sapne dheere-dheere sach hon. Thank you for being you.',sub:'With all my love — Manauwar Alam ❤️',party:true,music:true}
+];
+let idx=0,chosen={};let audioCtx=null,musicTimer=null,musicPlaying=false;
+for(let i=0;i<110;i++){let s=document.createElement('i');s.className='star';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.opacity=.2+Math.random()*.75;s.style.animationDelay=Math.random()*3+'s';s.style.animationDuration=(1.4+Math.random()*3)+'s';$('stars').appendChild(s)}
+function hearts(n=14){for(let i=0;i<n;i++){let h=document.createElement('span');h.className='heart';h.textContent=['💖','💕','♥','♡','💗','✨'][Math.floor(Math.random()*6)];h.style.left=Math.random()*100+'%';h.style.fontSize=(16+Math.random()*27)+'px';h.style.animationDuration=(4+Math.random()*5)+'s';$('fx').appendChild(h);setTimeout(()=>h.remove(),10000)}}
+function fireworks(n=100){for(let i=0;i<n;i++){let c=document.createElement('i');c.className='conf';c.style.left=Math.random()*100+'%';c.style.background=['#ff6fae','#ffd166','#b794f6','#fff','#68e1c0','#ff8c69'][Math.floor(Math.random()*6)];c.style.animationDuration=(2+Math.random()*3)+'s';c.style.animationDelay=Math.random()*.8+'s';$('confetti').appendChild(c);setTimeout(()=>c.remove(),6000)}hearts(45)}
+// Original synthesized celebratory tune; no external copyrighted audio or network request.
+const tune=[523,523,587,523,698,659,523,523,587,523,784,698,523,523,1046,880,698,659,587,932,932,880,698,784,698];
+function playTune(){if(!audioCtx||!musicPlaying)return;let start=audioCtx.currentTime;tune.forEach((f,i)=>{let o=audioCtx.createOscillator(),g=audioCtx.createGain();o.type='triangle';o.frequency.value=f;let t=start+i*.22;g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(.08,t+.025);g.gain.exponentialRampToValueAtTime(.0001,t+.19);o.connect(g);g.connect(audioCtx.destination);o.start(t);o.stop(t+.2)});musicTimer=setTimeout(playTune,tune.length*220+150)}
+async function startMusic(){try{let C=window.AudioContext||window.webkitAudioContext;if(!C)return;audioCtx=audioCtx||new C();await audioCtx.resume();if(!musicPlaying){musicPlaying=true;playTune()}}catch(e){}}
+function render(){let p=pages[idx];let c=`<div class="emoji">${p.emoji}</div><h1 class="${p.party?'bursttitle':''}">${p.title}</h1>`;
+if(p.candle)c+=`<div class="cakearea"><div class="flame" id="flame"></div><div class="candle"></div><div class="cakebase"></div></div><p>${p.text}</p><div class="actions"><button class="btn gold" onclick="blowCandle()">🕯️ Candle bujhao</button></div><p id="cakeReply" class="script"></p>`;
+else if(p.cut)c+=`<div class="cakearea" id="cakeArea"><div class="flame"></div><div class="candle"></div><div class="cakebase"></div><div class="slice"></div></div><p>${p.text}</p><div class="actions"><button class="btn gold" onclick="cutCake()">🔪 Cake kaato!</button></div><p id="cakeReply" class="script"></p>`;
+else if(p.question)c+=`<div class="question">${p.question}</div><div class="answerlist">${p.answers.map((a,i)=>`<button class="answer ${chosen[idx]===i?'selected':''}" onclick="choose(${i})">${a}</button>`).join('')}</div><p class="reply" id="reply">${chosen[idx]!==undefined?p.replies[chosen[idx]]:''}</p>`;
+else if(p.letter)c+=`<div class="letter"><p>My dearest Chandani,</p><p>Happy Birthday, meri jaan. ❤️ Tum meri zindagi ka sabse khoobsurat hissa ho. I hope your life is filled with peaceful mornings, silly laughter, good health, success, and people who treat your heart gently.</p><p>Main promise karta hoon ki tumhari feelings ki respect karunga, tumhari baat sununga, aur relationship mein honesty aur care ko important rakhunga. Har din perfect nahi hoga, lekin agar hum kabhi future mein saath chalein, toh problems ko milkar solve karne ki koshish karenge.</p><p>Tum apne dreams kabhi mat chhodna. Apni khushi, apni identity aur apni growth ko hamesha importance dena. I wish you a beautiful year and countless reasons to smile.</p><p style="text-align:right;font-style:italic;color:#c52d70">With all my love,<br>Manauwar Alam 💖</p></div>`;
+else c+=`<p>${p.text}</p>${p.sub?`<p class="script">${p.sub}</p>`:''}`;
+$('content').innerHTML=c;$('back').disabled=idx===0;$('next').textContent=idx===pages.length-1?'Replay ↺':'Next →';$('bar').style.width=((idx+1)/pages.length*100)+'%';if(p.party){fireworks(idx===0||idx===3||idx===19?150:60);startMusic()}else hearts(14)}
+function choose(i){chosen[idx]=i;renderKeepAnswer(i)}
+function renderKeepAnswer(i){document.querySelectorAll('.answer').forEach((b,j)=>b.classList.toggle('selected',i===j));let p=pages[idx];let r=$('reply');if(r)r.textContent=p.replies[i];hearts(20)}
+function blowCandle(){let f=$('flame');if(f)f.style.display='none';let r=$('cakeReply');if(r)r.textContent='Whoooosh! ✨ Wish tumhare naam, Chandani! 💖';hearts(40)}
+function cutCake(){let a=$('cakeArea');if(a)a.classList.add('cut');let r=$('cakeReply');if(r)r.textContent='CAKE CUT! 🎂🎉 Happy Birthday, Chandani!';fireworks(180);startMusic()}
+function move(d){if(d===1&&idx===pages.length-1)idx=0;else idx=Math.max(0,Math.min(pages.length-1,idx+d));render();window.scrollTo({top:0,behavior:'smooth'})}
+render();setInterval(()=>{if(Math.random()>.4)hearts(1)},1800);
+</script></body></html>
